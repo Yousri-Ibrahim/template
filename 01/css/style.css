@@ -50,10 +50,13 @@ nav .icons li{
      margin-left: 1%;
     margin-right: 1%;
 }
-nav .active {
+nav ul li:hover {
     border-bottom: 5px solid #11749e;
     padding-bottom: 15px;
-
+    cursor: pointer;
+}
+.xs-visible{
+    display: none;
 }
 /*start of slider*/
 
@@ -374,6 +377,7 @@ header .slide i{
     color: #e2e2e2;
      top: -75px;
      font-size: 6em;
+     left: -12px;
 }
 .team .us{
     overflow: hidden;
@@ -460,6 +464,7 @@ header .slide i{
 footer{
     background-color: #222;
     overflow: hidden;
+
 }
 footer p{
     color: #fff;
@@ -496,27 +501,265 @@ footer .two{
   width: 100%;
 }
 
+/*media query*/
 
-@media (min-width: 576px) {
+/*media for mobile*/
+
+@media (min-width: 576px) and (max-width:785px) {
   .container {
     max-width: 540px;
   }
+  /*nav bar section*/
+  .xs-visible{
+    display: block;
+  }
+  header .slide h1 {
+     font-size: 5em;
+}
+header .slide .lead {
+   margin-top: 32px;
+    font-size: 14px;
+}
+header .slide span {
+    margin-top: 9%;
+  }
+  /*agency section*/
+  .agency #background {
+    top: -71px;
+  }
+  .agency .features div {
+    width: 50%;
+}
+/*clients section*/
+.clients .image img {
+   min-height: 387px;
+   width: 100%;
+
+}
+.clients .black {
+    width: 100%;
+    min-height: 391px;
+}
+.clients .black h3{
+    text-align: center;
+}
+.clients .black p{
+    margin-right: 0;
+    text-align: center;
+}
+.clients .white{
+      width: 100%;
+    min-height: 388px;
+}
+.clients .white h3{
+    text-align: center;
+}
+.clients .white p{
+    margin-right: 0;
+    text-align: center;
+}
+/*blog section*/
+.blog h3{
+    font-size: 1.4em;
+    margin-top: 15%;
+}
+.blog p{
+    font-size: 1.2em;
+}
+.blog h3 #background {
+    color: #e2e2e2;
+    top: -68px;
+    font-size: 6em;
+}
+.blog .skills div {
+    width: 90%;
+}
+.blog .skills .text h4 {
+    text-align: center;
+}
+/*quote section*/
+.quotes div {
+    width: 90%;
+}
+/*work section*/
+.work .image img {
+    width: 78%;
+}
+.work .feat, .features .image {
+    width: 97%;
+}
+.work .feat h3{
+    font-size: 1.7em
+}
+.work .feat p{
+    font-size: 1.2em
+}
+.work .feat span{
+   font-size: 1em;
+}
+/*team section*/
+.team .lead{
+    margin-bottom: 10%;
+    margin-top: 12%;
+    font-size: 1.2em;
+}
+.team .us .image {
+    width: 95%;
+    margin-top: 3%;
+}
+/*contact us section*/
+.contact-us h3 {
+    font-size: .9em;
+}
+.contact-us h3 #background {
+    top: 60px;
+  
+}
+.contact-us form input {
+    width: 80.33%;
+    margin-bottom: 0%;
+     margin-left: 9%;
+}
+.contact-us form textarea {
+    width: 80%;
+   margin-top: 4%;
+   margin-left: 9%;
+}
+.contact-us form .btn {
+    left: 43%;
+    font-size: 1em;
+   margin-bottom: 4%;
+}
+/*footer*/
+footer p {
+   font-size: .7em;
 }
 
-@media (min-width: 768px) {
+}
+
+/*media for tablet*/
+@media (min-width: 768px)  and (max-width:991px) {
   .container {
     max-width: 720px;
   }
+   /*header section*/
+ nav ul li {
+    margin-left: 1%;
+    margin-right: 2%;
+}
+header .slide h1 {
+     font-size: 6em;
+}
+header .slide .lead {
+   margin-top: 32px;
+    font-size: 20px;
+}
+header .slide span {
+    margin-top: 9%;
+  }
+  /*agency section*/
+  .agency .features div {
+    width: 50%;
+}
+/*clients section*/
+.clients .image img {
+   min-height: 387px;
+}
+.clients .black {
+    min-height: 391px;
+}
+.clients .white{
+  
+    min-height: 388px;
+}
+/*blog section*/
+.blog .skills div {
+    width: 40%;
+}
+.blog .skills .text h4 {
+    text-align: center;
+}
+/*quote section*/
+.quotes div {
+    width: 46%;
+}
+/*work section*/
+.work .image img {
+    width: 60%;
+}
+.work .feat, .features .image {
+    width: 46%;
+}
+.work .feat span{
+   font-size: .7em;
+}
+/*team section*/
+.team .us .image {
+    width: 46%;
+    margin-top: 3%;
+}
+/*contact us section*/
+.contact-us h3 {
+    font-size: 1.3em;
+}
+.contact-us h3 #background {
+    top: 72px;
+  
+}
+.contact-us form input {
+    width: 40.33%;
+    margin-bottom: 0%;
+
+}
+.contact-us form textarea {
+    width: 84%;
+   margin-top: 4%;
+}
+.contact-us form .btn {
+    left: 34%;
+    font-size: 1.1em;
+   margin-bottom: 4%;
+}
+/*footer*/
+footer p {
+   font-size: .7em;
+}
 }
 
-@media (min-width: 992px) {
+/*media for pc*/
+@media (min-width: 992px) and (max-width:1199px) {
   .container {
     max-width: 960px;
   }
 }
 
+/*media for xl pc*/
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
+/* clients section*/
+  .clients .black {
+    min-height: 364px;
+    max-height: 700px;
+}
+.clients .white{
+  
+    min-height: 392px;
+    max-height: 700px;
+
+}
+.clients #background{
+    top:-73px;
+}
+/* team section*/
+.team h3 #background{
+    left: -16px;
+}
+/*contact us setion*/
+.contact-us h3 #background {
+    top: 138px;
+   
+}
+
 }
